@@ -11,8 +11,8 @@ namespace Asistencia.DAL
     public class Contexto : DbContext
     {
         public DbSet<Asistencias> Asistencia { get; set;}
-        public DbSet<Asignaturas> Asignatura { get; set; }
         public DbSet<Estudiantes> Estudiante { get; set; }
+        public DbSet<Asignaturas> Asignatura { get; set; }
 
         public Contexto() : base("ConStr") { }
     }
